@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter_container{
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+.counter_name{
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.count_display{
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+}
+.step_container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+#step{
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px;
+}
+.increase_btn{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 0.2s ease-in 0s;
+    cursor: pointer;
+}
+.decrease_btn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 0.2s ease-in 0s;
+    cursor: pointer;
+
+}
+.reset_btn{
+    background-color: rgb(43, 158, 203);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 0.2s ease-in 0s;
+    cursor: pointer;
+
+}
+.increase_btn:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+.decrease_btn:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+.reset_btn:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+.count_status{
+    text-align: center;
+    font-weight: 500;
+}
+@media(max-width:768px){
+    
+    .btns{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .increase_btn,.decrease_btn,.reset_btn{
+        margin: 0;
+    }
+    
+    
+}
